@@ -2003,7 +2003,7 @@ pub struct WebSearchActionSearch {
     pub query: Option<String>,
     /// The search queries
     #[serde(default)]
-    pub queries: Vec<String>,
+    pub queries: Option<Vec<String>>,
     /// The sources used in the search.
     pub sources: Option<Vec<WebSearchActionSearchSource>>,
 }
